@@ -54,10 +54,11 @@ model.add(LayerDense(128, 10))
 model.add(ActivationSoftmax())
 
 # Set loss and accuracy objects
-# We do not set optimizer object this time - there'sno need to do it
+# We do not set optimizer object this time - there's no need to do it
 # as we won't train the model
 model.set(loss=LossCategoricalCrossentropy(), accuracy=AccuracyCategorical())
-# Finalize the modelmodel.finalize()
+# Finalize the model
+model.finalize()
 # Set model with parameters instead of training it
 model.load_parameters('fashion_mnist.parms')
 # Evaluate the model
