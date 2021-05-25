@@ -1,0 +1,11 @@
+# vscode python import helper
+.vscode/
+
+# pycharm files
+.idea/
+
+# pycache
+__pycache__/
+
+# virtual environment
+venv/
